@@ -16,7 +16,7 @@ readme = true
 homepage = "https://github.com/known-facts/known-errors"
 repository = "https://github.com/known-facts/known-errors"
 license = "Unlicense"
-keywords = ["known", "errors", "sysexits"]
+keywords = ["known", "errors", "sysexits", "exitcode"]
 categories = [
     "api-bindings",
     "config",

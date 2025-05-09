@@ -400,6 +400,7 @@ pub fn exit(code: SysexitsError) -> ! {
 /// Exit the process with the given exit code and error string to be printed to
 /// standard error.
 #[cfg(feature = "std")]
+#[macro_export]
 macro_rules! abort {
     ($code:expr, $($t:tt)*) => {{
         std::eprintln!($($t)*);
