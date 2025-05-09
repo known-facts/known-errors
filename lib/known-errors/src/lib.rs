@@ -12,6 +12,9 @@
 mod features;
 pub use features::*;
 
+#[cfg(feature = "sysexits")]
+pub mod sysexits;
+
 #[doc = include_str!("../../../README.md")]
 #[cfg(doctest)]
 pub struct ReadmeDoctests;

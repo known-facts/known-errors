@@ -16,10 +16,29 @@ publish.workspace = true
 
 [features]
 default = ["all", "std"]
+all = ["sysexits"]
 std = []
-all = []
 unstable = []
 
-[dev-dependencies]
+# Features:
+sysexits = []
+
+# Integrations:
+error-stack = ["dep:error-stack"]
+gofer = ["dep:gofer"]
+serde = ["dep:serde"]
+serde-json = ["serde", "dep:serde_json"]
+tokio = ["dep:tokio"]
 
 [dependencies]
+error-stack = { version = "0.5", default-features = false, optional = true }
+gofer = { version = "0.1", default-features = false, optional = true }
+serde = { version = "1", default-features = false, optional = true }
+serde_json = { version = "1", default-features = false, features = [
+    "alloc",
+], optional = true }
+tokio = { version = "1", default-features = false, features = [
+    "rt",
+], optional = true }
+
+[dev-dependencies]
