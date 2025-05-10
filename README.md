@@ -51,6 +51,17 @@ use known_errors;
 
 https://docs.rs/known-errors/
 
+### Integrations
+
+Crate (Feature) | Version | Usage | Summary
+:--- | :--- | :--- | :---
+[error-stack] &nbsp;<sub>(`"error-stack"`)</sub> | 0.5 | [![error-stack](https://docs.rs/error-stack/badge.svg)](https://docs.rs/error-stack/) | Implements `error_stack::Context`
+[gofer] &nbsp;<sub>(`"gofer"`)</sub> | 0.1 | [![gofer](https://docs.rs/gofer/badge.svg)](https://docs.rs/gofer/) | Implements `From<gofer::Error>`
+[serde] &nbsp;<sub>(`"serde"`)</sub> | 1 | [![serde](https://docs.rs/serde/badge.svg)](https://docs.rs/serde/) | Enables the `serde-json` feature
+[serde_json] &nbsp;<sub>(`"serde-json"`)</sub> | 1 | [![serde_json](https://docs.rs/serde_json/badge.svg)](https://docs.rs/serde_json/) | Implements `From<serde_json::Error>`
+[tokio] &nbsp;<sub>(`"tokio"`)</sub> | 1 | [![tokio](https://docs.rs/tokio/badge.svg)](https://docs.rs/tokio/) | Implements `From<tokio::task::JoinError>`
+<img width="220" height="1"/> | <img width="110" height="1"/> | <img width="100" height="1"/> | &nbsp;
+
 ## 👨‍💻 Development
 
 ```bash
@@ -67,3 +78,9 @@ git clone https://github.com/known-facts/known-errors.git
 
 [feature flags]: https://github.com/known-facts/known-errors/blob/master/lib/known-errors/Cargo.toml
 [naming conventions]: https://rust-lang.github.io/api-guidelines/naming.html
+
+[error-stack]: https://crates.io/crates/error-stack
+[gofer]: https://crates.io/crates/gofer
+[serde]: https://crates.io/crates/serde
+[serde_json]: https://crates.io/crates/serde_json
+[tokio]: https://crates.io/crates/tokio
